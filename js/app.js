@@ -13,7 +13,8 @@ var swiper = new Swiper('.swiper-container', {
 new Vue({
     el: '#header',
     data: {
-        mindex: 0
+        mindex: 0,
+        openMenu:false
     },
     methods:{
         openDropMenu(index){
@@ -21,6 +22,9 @@ new Vue({
         },
         closeDropMenu() {
             this.mindex = 0;
+        },
+        showMenu(){
+            this.openMenu = !this.openMenu;
         }
     }
 })

@@ -173,6 +173,7 @@ ul{
 .banner h1{
     font-size: 136px !important;
     color: #ED1C24;
+    margin: 0;
 }
 .banner h1.title-heading-left,
 .banner h2{
@@ -527,6 +528,13 @@ ul{
 #consulting-01 .consulting-text{
     padding: 80px 144px 0;
 }
+#consulting-01 .fusion-column-content-centered{
+    height: 480px;
+}
+#consulting-01 .hover-type-zoomin img{
+    height: 480px;
+    width: 100%;
+}
 #consulting-01 .consulting-text h5{
     font-size: 20px;
 }
@@ -539,6 +547,36 @@ ul{
 /* questions */
 #questions{
     padding: 80px 40px;
+}
+#contact{
+    padding: 45px 0;
+}
+#contact h6{
+    font-size: 42px;
+    color: #ed1c24;
+    margin: 0 15px;
+}
+.contact-form .fusion-column-wrapper {
+    margin-top: 35px;
+}
+.contact-form .wpcf7-form-control-wrap {
+    display: block;
+    margin-top: -34px;
+    z-index: -1;
+}
+.wpcf7-form .wpcf7-text {
+    color: #000000;
+    font-size: 15px;
+    border: 0;
+    border-bottom: 1px solid #B7B7B8;
+}
+
+.fusion-column-wrapper{
+    padding: 25px 30px 6px;
+    background-color: #f1f2f4;
+}
+.map-wrapper{
+    height: 200px;
 }
 /* footer */
 footer{
@@ -562,4 +600,110 @@ footer h3{
 footer p{
     padding: 15px 0;
     font-size: 12px;
+}
+@media screen and (max-width: 414px) {
+    header .icon-menu{
+        float: right;
+        font-size: 21px;
+        margin-left: 20px;
+        color: #707070;
+    }
+    .logo-wrapper{
+        padding: 15px;
+    }
+    .logo-wrapper img{
+        max-width: 130px;
+    }
+    .menu-wrapper{
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        padding: 15px;
+        background-color: #fff;
+        z-index: 100;
+    }
+    .menu-wrapper .menu li{
+        display: block;
+        width: 100%;
+        padding-left: 0;
+    }
+    .menu-wrapper .menu li a{
+        line-height: 35px;
+    }
+    .banner{
+        height: 390px;
+        background-size: cover;
+        background-position: 77% 50%;
+    }
+    .banner h1{
+        font-size: 45px !important;
+        margin: 0;
+        margin-top: 30px;
+    }
+    .banner h1.title-heading-left, .banner h2{
+        padding-left: 0px;
+    }
+    #intro .icon,#intro .content-box-heading{
+        margin-bottom: 15px;
+    }
+    #intro .content-container{
+       margin-bottom: 60px;
+       text-align: left;
+       padding-left: 25px;
+    }
+    .post-box{
+        padding: 15px;
+    }
+    .post-title,.post-description{
+        font-size: 12px;
+        padding: 0;
+    }
+    #product-carousel .fusion-carousel-title a{
+        font-size: 14px;
+    }
+    .fusion-button-wrapper a{
+        padding: 30px 15px;
+    }
+    #news-tabs{
+        padding: 40px 0 0 0 ;
+    }
+    #news-tabs .title-heading-left{
+        padding-left: 15px;
+    }
+    .fusion-post-content li{
+        padding: 5px;
+    }
+    .post-title a{
+        background-position: 93%;
+    }
+    .lists .col-xs-6.col-md-3{
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+    .highlights,.technicaldata{
+        padding: 30px 0;
+    }
+    .technicaldata .data-ul li{
+        padding: 10px;
+    }
+    .attachments{
+        padding: 20px;
+    }
+    #consulting-01{
+        padding: 25px;
+    }
+    #consulting-01 .consulting-text{
+        padding: 40px 25px;
+    }
+    #consulting-01 .hover-type-zoomin{
+        padding: 25px;
+    }
+    #consulting-01 .fusion-column-content-centered{
+        min-height: 200px;
+        height: auto;
+    }
+    #consulting-01 .hover-type-zoomin img{
+        height: auto;
+    }
 }
