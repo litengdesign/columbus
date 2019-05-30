@@ -221,6 +221,7 @@ ul{
 .post-box{
     background-color: #fff;
     margin-bottom: 20px;
+    padding: 0;
 }
 .post-title,
 .post-description{
