@@ -41,22 +41,22 @@
             <div class="menu-wrapper visible-xs" v-if="openMenu" >
                 <ul class="menu">
                     <li>
-                        <a href="products.html" class="menu-text"><span>产品</span></a>
+                        <a href="products.html" class="menu-text"><span>菜单</span></a>
                     </li>
                     <li>
-                        <a href="products.html" class="menu-text"><span>产品</span></a>
+                        <a href="products.html" class="menu-text"><span>菜单</span></a>
                     </li>
                     <li>
-                        <a href="products.html" class="menu-text"><span>产品</span></a>
+                        <a href="products.html" class="menu-text"><span>菜单</span></a>
                     </li>
                     <li>
-                        <a href="products.html" class="menu-text"><span>产品</span></a>
+                        <a href="products.html" class="menu-text"><span>菜单</span></a>
                     </li>
                     <li>
-                        <a href="products.html" class="menu-text"><span>产品</span></a>
+                        <a href="products.html" class="menu-text"><span>菜单</span></a>
                     </li>
                     <li>
-                        <a href="products.html" class="menu-text"><span>产品</span></a>
+                        <a href="products.html" class="menu-text"><span>菜单</span></a>
                     </li>
                 </ul>
             </div>
@@ -64,33 +64,62 @@
                 <ul class="menu">
                     <li @mouseover="openDropMenu(1)"  @mouseout="closeDropMenu(1)" :class="mindex==1?'active':''">
                         <a href="products.html" class="menu-text"><span>产品</span></a>
-                        <div class="dropMenu">
+                        <div class="dropMenu products">
                             <div class="row">
-                                <div class="col-md-2 menu-list col-xs-12">
+                                <div class="col-md-3 menu-list col-xs-12">
                                     <ul class="sub-menu">
-                                        <li><a href="http://">产品1</a></li>
-                                        <li><a href="http://">产品1</a></li>
-                                        <li><a href="http://">产品1</a></li>
-                                        <li><a href="http://">产品1</a></li>
-                                        <li><a href="http://">产品1</a></li>
+                                        <li>
+                                            <a href="http://">
+                                                <i class="icon icon-reinigungsautomaten"></i>
+                                                <b>reinigungsautomaten</b>
+                                            </a>
+                                        </li>
+                                        <li><a href="http://">Walk-behind</a></li>
+                                        <li><a href="http://">Walk-behind</a></li>
+                                    </ul>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="http://">
+                                                <i class="icon icon-kehrmaschine"></i>
+                                                <b>kehrmaschine</b>
+                                            </a>
+                                        </li>
+                                        <li><a href="http://">Walk-behind</a></li>
+                                        <li><a href="http://">Walk-behind</a></li>
+                                    </ul>
+                                    <ul class="sub-menu">
+                                        <li><a href="http://">
+                                            <i class="icon icon-einscheibenmaschinen"></i><b>einscheibenmaschinen</b></a></li>
+                                        <li><a href="http://">Walk-behind</a></li>
+                                        <li><a href="http://">Walk-behind</a></li>
+                                        <li><a href="http://">Walk-behind</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-md-2 menu-list col-xs-12">
+                                <div class="col-md-3 menu-list col-xs-12">
                                     <ul class="sub-menu">
-                                        <li><a href="http://">产品2</a></li>
-                                        <li><a href="http://">产品2</a></li>
-                                        <li><a href="http://">产品2</a></li>
-                                        <li><a href="http://">产品2</a></li>
-                                        <li><a href="http://">产品2</a></li>
+                                        <li><a href="http://">
+                                            <i class="icon icon-industriesauger"></i>
+                                            <b>industriesauger</b></a></li>
+                                        <li><a href="http://">Walk-behind</a></li>
+                                        <li><a href="http://">Walk-behind</a></li>
+                                        <li><a href="http://">Walk-behind</a></li>
                                     </ul>
-                                </div>
-                                <div class="col-md-2 menu-list col-xs-12">
                                     <ul class="sub-menu">
-                                        <li><a href="http://">Beratung & Schulung</a></li>
-                                        <li><a href="http://">Beratung & Schulung</a></li>
-                                        <li><a href="http://">Beratung & Schulung</a></li>
-                                        <li><a href="http://">Beratung & Schulung</a></li>
-                                        <li><a href="http://">Beratung & Schulung</a></li>
+                                        <li><a href="http://">
+                                            <i class="icon icon-gewerbesauger"></i>
+                                            <b>gewerbesauger</b></a></li>
+                                        <li><a href="http://">Walk-behind</a></li>
+                                        <li><a href="http://">Walk-behind</a></li>
+                                    </ul>
+                                    <ul class="sub-menu">
+                                        <li><a href="http://">
+                                            <i class="icon icon-spruehextraktionsmaschinen"></i>
+                                            <b>spruehextraktionsmaschinen</b></a></li>
+                                    </ul>
+                                    <ul class="sub-menu">
+                                        <li><a href="http://">
+                                            <i class="icon icon-rolltreppen-fahrsteigreiniger"></i>
+                                            <b>fahrsteigreiniger</b></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-3 menu-list pull-right">
@@ -117,7 +146,7 @@
                         <a href="" class="menu-text"><span>行业应用</span></a>
                         <div class="dropMenu fadeIn animated">
                             <div class="row">
-                                <div class="col-md-2 menu-list col-xs-12">
+                                <div class="col-md-3 menu-list col-xs-12">
                                     <ul class="sub-menu">
                                         <li><a href="http://">行业应用1</a></li>
                                         <li><a href="http://">行业应用1</a></li>

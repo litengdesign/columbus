@@ -116,14 +116,23 @@ ul{
 .dropMenu .menu-list:last-child{
     padding-top: 0;
 }
+.dropMenu .sub-menu{
+    padding-left: 26px;
+}
 .dropMenu .sub-menu li{
-   margin-bottom: 20px;
+   margin-bottom: 8px;
 }
 .dropMenu .sub-menu li a{
    padding: 4px 0 4px 30px;
    font-size: 13px;
-   font-weight: bold;
    color: #000;
+   font-weight: bold;
+}
+.dropMenu.products .sub-menu li a{
+    font-weight: 400;
+}
+.dropMenu.products .sub-menu li:first-child a{
+    padding-left: 0;
 }
 .dropMenu .sub-menu li a:hover{
     color: #ED1C24;
@@ -154,6 +163,40 @@ ul{
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+}
+.dropMenu .sub-menu .icon{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+}
+.dropMenu .sub-menu .icon-reinigungsautomaten{
+    background: url('../img/icon-reinigungsautomaten.png') no-repeat center;
+    background-size: cover;
+}
+.dropMenu .sub-menu .icon-kehrmaschine{
+    background: url('../img/icon-kehrmaschine.png') no-repeat center;
+    background-size: cover;
+}
+.dropMenu .sub-menu .icon-einscheibenmaschinen{
+    background: url('../img/icon-einscheibenmaschinen.png') no-repeat center;
+    background-size: cover;
+}
+.dropMenu .sub-menu .icon-industriesauger{
+    background: url('../img/icon-industriesauger.png') no-repeat center;
+    background-size: cover;
+}
+.dropMenu .sub-menu .icon-gewerbesauger{
+    background: url('../img/icon-gewerbesauger.png') no-repeat center;
+    background-size: cover;
+}
+.dropMenu .sub-menu .icon-spruehextraktionsmaschinen{
+    background: url('../img/icon-spruehextraktionsmaschinen.png') no-repeat center;
+    background-size: cover;
+}
+.dropMenu .sub-menu .icon-rolltreppen-fahrsteigreiniger{
+    background: url('../img/icon-rolltreppen-fahrsteigreiniger.png') no-repeat center;
+    background-size: cover;
 }
 /* banner */
 .banner{
