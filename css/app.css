@@ -91,6 +91,7 @@ ul{
     font-weight: 700;
     font-size: 17px;
     border-bottom: 3px solid transparent;
+    text-transform:uppercase;
 }
 .menu-wrapper .menu>li a:hover{
     border-bottom: 3px solid #ED1C24;
@@ -127,6 +128,7 @@ ul{
    font-size: 13px;
    color: #000;
    font-weight: bold;
+   text-transform: uppercase;
 }
 .dropMenu.products .sub-menu li a{
     font-weight: 400;
@@ -140,7 +142,7 @@ ul{
 }
 .dropMenu .hot-post{
     background-color: #F0F2F3;
-    padding: 29px 34px 29px 34px;
+    padding: 40px 34px 40px 34px;
 }
 .fusion-megamenu-title {
     display: block;
