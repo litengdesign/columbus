@@ -1,10 +1,14 @@
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
-    spaceBetween: 30,
+//banner
+var swiper = new Swiper('.swiper-banner', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
+});
+//产品列表幻灯片
+var swiper = new Swiper('.swiper-product', {
+    slidesPerView: 3,
+    spaceBetween: 30,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

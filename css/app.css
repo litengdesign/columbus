@@ -231,12 +231,16 @@ ul{
 }
 /* banner */
 .banner{
-    padding: 50px 0;
+    padding-top: 125px;
+    padding-right: 40px;
+    padding-bottom: 80px;
+    padding-left: 40px;
     background: url('../img/banner.jpg') no-repeat;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 550px;
+    min-height: 550px;
+    width: 100%;
 }
 .banner-category{
     background: url('../img/banner2.jpg') no-repeat;
@@ -314,12 +318,12 @@ ul{
 #product-carousel {
     background-image: url('../img/bg-grey.png');
     background-repeat: repeat-x !important;
-    background-position: 50% -186px !important;
+    background-position: 50% 220px !important;
 }
 .swiper-container {
     width: 100%;
 }
-.swiper-wrapper{
+.swiper-product{
     padding-bottom: 50px;
 }
 .swiper-slide {
@@ -338,22 +342,35 @@ ul{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    height: 320px;
 }
 .fusion-carousel .fusion-carousel-item img {
     vertical-align: middle;
     width: 100%;
     height: auto;
 }
+#product-carousel{
+    padding: 50px 0;
+}
 #product-carousel .fusion-carousel-title a{
     font-size: 24px;
-    color: #ED1C24
+    color: rgba(0,0,0,0.7);
 }
 .swiper-title{
     padding: 30px 0;
     font-size: 24px;
     color: #ed1c24;
     text-align: center;
+}
+.swiper-pagination-bullet-active{
+    background-color: #ED1C24;
+}
+.swiper-product .swiper-content h4,
+.swiper-product .swiper-content .fusion-carousel-meta{
+    text-align: left;
+    padding-left: 80px;
+}
+.swiper-product .swiper-content .fusion-carousel-meta a{
+    color: rgba(0,0,0,0.5);
 }
 .post-title a{
     color: #000;
@@ -421,10 +438,14 @@ ul{
     color: #000;
 }
 .fusion-post-content-wrapper{
+    display: block;
     height: 115px;
     background-color: #f1f2f4;
     padding: 11.2px;
     border-bottom: 1px solid #f8f8f8;
+}
+.fusion-post-content-wrapper:hover{
+    background-color: #e5e5e5;
 }
 .fusion-post-content-wrapper:last-child{
     border-bottom: 0;
@@ -440,13 +461,13 @@ ul{
     font-size: 17px;
 }
 .fusion-post-content-container p {
-    font-size: 12px;
+    font-size: 14px;
     margin: 0;
 }
 .fusion-button-wrapper a{
     display: block;
     text-align: right;
-    padding: 60px 0 0;
+    padding: 40px 0 0;
     color: #ED1C24;
 }
 .fusion-single-line-meta{
@@ -476,7 +497,6 @@ ul{
 }
 .fusion-image-wrapper {
     background: #F0F2F3;
-    border-bottom: 2px solid #ED1C24;
 }
 .fusion-portfolio-grid .fusion-post-title a {
     color: #000000;
