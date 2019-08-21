@@ -56,10 +56,10 @@ ul{
 }
 /* header */
 #header{
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     background-repeat: repeat-x;
     background-position: 0 100%;
-    background-image: url(../img/bg-breadcrumb.png);
+    /* background-image: url(../img/bg-breadcrumb.png); */
 }
 .top-menu li{
   float: left;
