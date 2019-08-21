@@ -14,57 +14,109 @@
 <body>
     <header id="header">
         <div class="container">
-            <div class="row">
+            <!-- 顶部菜单 -->
+            <div class="row visible-lg">
                 <nav class="pull-right">
                     <ul class="top-menu">
                         <li>
-                            <a href="">News</a>
+                            <a click="javascript:void(0)">全国咨询电话：021-63066088</a>
                         </li>
                         <li>
-                            <a href="">Catch the date</a>
-                        </li>
-                        <li>
-                            <a href="">Login</a></li>
-                        <li>
-                            <a>EN</a>
+                            <a target="_blank" href="https://www.columbus-clean.com/en/">EN</a>
                         </li>
                     </ul>
                 </nav>
             </div>
             <div class="logo-wrapper">
                 <a href="index.html"><img src="img/columbus-logo.png" alt=""></a>
+                <i class="icon-menu visible-xs glyphicon glyphicon-menu-hamburger" @click="showMenu()" v-if="!openMenu"></i>
+                <i class="icon-menu visible-xs glyphicon glyphicon-remove" @click="showMenu()" v-if="openMenu"></i>
             </div>
-            <div class="menu-wrapper">
+            <div class="menu-wrapper visible-xs" v-if="openMenu">
                 <ul class="menu">
+                    <li>
+                        <a href="products.html" class="menu-text"><span>首页</span></a>
+                    </li>
+                    <li>
+                        <a href="products.html" class="menu-text"><span>产品中心</span></a>
+                    </li>
+                    <li>
+                        <a href="products.html" class="menu-text"><span>行业中心</span></a>
+                    </li>
+                    <li>
+                        <a href="products.html" class="menu-text"><span>服务</span></a>
+                    </li>
+                    <li>
+                        <a href="products.html" class="menu-text"><span>关于我们</span></a>
+                    </li>
+                    <li>
+                        <a href="products.html" class="menu-text"><span>联系我们</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-wrapper hidden-xs row">
+                <ul class="menu col-md-8">
                     <li @mouseover="openDropMenu(1)" @mouseout="closeDropMenu(1)" :class="mindex==1?'active':''">
-                        <a href="products.html" class="menu-text"><span>产品</span></a>
-                        <div class="dropMenu">
+                        <a href="products.html" class="menu-text"><span>首页</span></a>
+                        <div class="dropMenu products">
                             <div class="row">
-                                <div class="col-md-2 menu-list">
+                                <div class="col-md-3 menu-list col-xs-12">
                                     <ul class="sub-menu">
-                                        <li><a href="http://">产品1</a></li>
-                                        <li><a href="http://">产品1</a></li>
-                                        <li><a href="http://">产品1</a></li>
-                                        <li><a href="http://">产品1</a></li>
-                                        <li><a href="http://">产品1</a></li>
+                                        <li>
+                                            <a href="http://">
+                                                <i class="icon icon-reinigungsautomaten"></i>
+                                                <b>reinigungsautomaten</b>
+                                            </a>
+                                        </li>
+                                        <li><a href="http://">Walk-behind</a></li>
+                                        <li><a href="http://">Ride-on</a></li>
+                                    </ul>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="http://">
+                                                <i class="icon icon-kehrmaschine"></i>
+                                                <b>kehrmaschine</b>
+                                            </a>
+                                        </li>
+                                        <li><a href="http://">Walk-behind</a></li>
+                                        <li><a href="http://">Ride-on</a></li>
+                                    </ul>
+                                    <ul class="sub-menu">
+                                        <li><a href="http://">
+                                                <i
+                                                    class="icon icon-einscheibenmaschinen"></i><b>einscheibenmaschinen</b></a>
+                                        </li>
+                                        <li><a href="http://">Low Speed</a></li>
+                                        <li><a href="http://">High Speed</a></li>
+                                        <li><a href="http://">Thermopad</a></li>
+                                        <li><a href="http://">Ex-protected</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-md-2 menu-list">
+                                <div class="col-md-4 menu-list col-xs-12">
                                     <ul class="sub-menu">
-                                        <li><a href="http://">产品2</a></li>
-                                        <li><a href="http://">产品2</a></li>
-                                        <li><a href="http://">产品2</a></li>
-                                        <li><a href="http://">产品2</a></li>
-                                        <li><a href="http://">产品2</a></li>
+                                        <li><a href="http://">
+                                                <i class="icon icon-industriesauger"></i>
+                                                <b>Industrial vacuums</b></a></li>
+                                        <li><a href="http://">Dry</a></li>
+                                        <li><a href="http://">Wet</a></li>
+                                        <li><a href="http://">Atex</a></li>
                                     </ul>
-                                </div>
-                                <div class="col-md-2 menu-list">
                                     <ul class="sub-menu">
-                                        <li><a href="http://">Beratung & Schulung</a></li>
-                                        <li><a href="http://">Beratung & Schulung</a></li>
-                                        <li><a href="http://">Beratung & Schulung</a></li>
-                                        <li><a href="http://">Beratung & Schulung</a></li>
-                                        <li><a href="http://">Beratung & Schulung</a></li>
+                                        <li><a href="http://">
+                                                <i class="icon icon-gewerbesauger"></i>
+                                                <b>Commercial vacuum cleaners</b></a></li>
+                                        <li><a href="http://">Upright and dry vacuum cleaners</a></li>
+                                        <li><a href="http://">Wet and dry vacuum cleaners</a></li>
+                                    </ul>
+                                    <ul class="sub-menu">
+                                        <li><a href="http://">
+                                                <i class="icon icon-spruehextraktionsmaschinen"></i>
+                                                <b>Spray extraction</b></a></li>
+                                    </ul>
+                                    <ul class="sub-menu">
+                                        <li><a href="http://">
+                                                <i class="icon icon-rolltreppen-fahrsteigreiniger"></i>
+                                                <b>Escalators & walkways cleaning</b></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-3 menu-list pull-right">
@@ -75,7 +127,7 @@
                                         <div class="media_image-3 hover-type-zoomin">
                                             <a href="http://">
                                                 <div class="hover-type-zoomin"><img
-                                                        src="https://www.columbus-clean.com/wp-content/uploads/2019/02/menu-tb-02-40-liter-klasse-300x200.jpg"
+                                                        src="https://www.columbus-clean.com/wp-content/uploads/2019/03/menu-tb-01-40-litre-600x400.jpg"
                                                         alt=""></div>
                                             </a>
                                         </div>
@@ -91,16 +143,16 @@
                         </div>
                     </li>
                     <li @mouseover="openDropMenu(2)" @mouseout="closeDropMenu(2)" :class="mindex==2?'active':''">
-                        <a href="" class="menu-text"><span>行业应用</span></a>
+                        <a href="" class="menu-text"><span>产品</span></a>
                         <div class="dropMenu fadeIn animated">
                             <div class="row">
-                                <div class="col-md-2 menu-list">
+                                <div class="col-md-3 menu-list col-xs-12">
                                     <ul class="sub-menu">
-                                        <li><a href="http://">行业应用1</a></li>
-                                        <li><a href="http://">行业应用1</a></li>
-                                        <li><a href="http://">行业应用1</a></li>
-                                        <li><a href="http://">行业应用1</a></li>
-                                        <li><a href="http://">行业应用1</a></li>
+                                        <li><a href="http://">Contract cleaners</a></li>
+                                        <li><a href="http://">Retail</a></li>
+                                        <li><a href="http://">Industry</a></li>
+                                        <li><a href="http://">Transport / logistics</a></li>
+                                        <li><a href="http://">Healthcare</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-3 menu-list pull-right">
@@ -127,25 +179,14 @@
                             </transition>
                     </li>
                     <li @mouseover="openDropMenu(3)" @mouseout="closeDropMenu(3)" :class="mindex==3?'active':''"><a
-                            href="article.html" class="menu-text"><span>服务</span></a>
+                            href="article.html" class="menu-text"><span>行业应用</span></a>
                         <div class="dropMenu">
                             <div class="row">
-                                <div class="col-md-2 menu-list">
+                                <div class="col-md-3 menu-list col-xs-12">
                                     <ul class="sub-menu">
-                                        <li><a href="http://">服务1</a></li>
-                                        <li><a href="http://">服务1</a></li>
-                                        <li><a href="http://">服务1</a></li>
-                                        <li><a href="http://">服务1</a></li>
-                                        <li><a href="http://">服务1</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-2 menu-list">
-                                    <ul class="sub-menu">
-                                        <li><a href="http://">Beratung & Schulung</a></li>
-                                        <li><a href="http://">Beratung & Schulung</a></li>
-                                        <li><a href="http://">Beratung & Schulung</a></li>
-                                        <li><a href="http://">Beratung & Schulung</a></li>
-                                        <li><a href="http://">Beratung & Schulung</a></li>
+                                        <li><a href="http://">Advice & training</a></li>
+                                        <li><a href="http://">Financing solutions</a></li>
+                                        <li><a href="http://">Smart tools</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-3 menu-list pull-right">
@@ -156,7 +197,7 @@
                                         <div class="media_image-3 hover-type-zoomin">
                                             <a href="http://">
                                                 <div class="hover-type-zoomin"><img
-                                                        src="https://www.columbus-clean.com/wp-content/uploads/2019/02/menu-tb-02-40-liter-klasse-300x200.jpg"
+                                                        src="https://www.columbus-clean.com/wp-content/uploads/2019/03/menu-tb-03-columbus-mobil-app-600x400.jpg"
                                                         alt=""></div>
                                             </a>
                                         </div>
@@ -172,16 +213,14 @@
                         </div>
                     </li>
                     <li @mouseover="openDropMenu(4)" @mouseout="closeDropMenu(4)" :class="mindex==4?'active':''">
-                        <a href="" class="menu-text"><span>关于我们</span></a>
+                        <a href="javascript:void(0)" class="menu-text"><span>服务</span></a>
                         <div class="dropMenu">
                             <div class="row">
-                                <div class="col-md-2 menu-list">
+                                <div class="col-md-3 menu-list col-xs-12">
                                     <ul class="sub-menu">
-                                        <li><a href="http://">关于我们1</a></li>
-                                        <li><a href="http://">关于我们1</a></li>
-                                        <li><a href="http://">关于我们1</a></li>
-                                        <li><a href="http://">关于我们1</a></li>
-                                        <li><a href="http://">关于我们1</a></li>
+                                        <li><a href="http://">Clean quality</a></li>
+                                        <li><a href="http://">Company profile</a></li>
+                                        <li><a href="http://">Career</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-3 menu-list pull-right">
@@ -192,7 +231,7 @@
                                         <div class="media_image-3 hover-type-zoomin">
                                             <a href="http://">
                                                 <div class="hover-type-zoomin"><img
-                                                        src="https://www.columbus-clean.com/wp-content/uploads/2019/02/menu-tb-02-40-liter-klasse-300x200.jpg"
+                                                        src="https://www.columbus-clean.com/wp-content/uploads/2019/03/menu-tb-04-quality-made-in-germany-600x400.jpg"
                                                         alt=""></div>
                                             </a>
                                         </div>
@@ -207,42 +246,81 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="#" class="menu-text"><span>联系我们</span></a>
+                    <li><a href="contact.html" class="menu-text"><span>关于我们</span></a>
+                    </li>
+                    <li><a href="contact.html" class="menu-text"><span>联系我们</span></a>
                     </li>
                 </ul>
+                <div class="col-md-4">
+                    <div class="search-wrap">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><i class="icon-search"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
+    <!-- banner -->
+    <div class="swiper-container swiper-banner">
+        <!-- <h4 class="swiper-title">推荐产品</h4> -->
+        <div class="swiper-wrapper row">
+            <div class="swiper-slide">
+                <div class="banner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-8">
+                                <h1>CLEAN</h1>
+                            </div>
+                            <div class="col-xs-8">
+                                <h1 class="title-heading-left">Quality</h1>
+                            </div>
+                            <div class="col-xs-8">
+                                <h2>Real machines. True service.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="banner"
+                    style="background-image: url('https://www.columbus-clean.com/wp-content/uploads/2018/11/RA66BM60-ab-01-reinigungsautomat-scheuersaugmaschine-1.jpg')">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-8">
+                                <h1>CLEAN2</h1>
+                            </div>
+                            <div class="col-xs-8">
+                                <h1 class="title-heading-left">Quality</h1>
+                            </div>
+                            <div class="col-xs-8">
+                                <h2>Real machines. True service.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
     <!-- 面包屑 -->
     <div class="breadcrumbs">
         <div class="container">
                 <div class="fusion-breadcrumbs">
-                    <span><a href="https://www.columbus-clean.com/">Startseite</a> ›</span>
-                    <span><a href="https://www.columbus-clean.com/produkte/">Produkte</a> › </span>
+                    <span><a href="https://www.columbus-clean.com/">产品中心</a> ›</span>
+                    <span><a href="https://www.columbus-clean.com/produkte/">单擦机</a> › </span>
                     <span class="breadcrumb_last" aria-current="page">RA 35|K 10</span>
                 </div>
-        </div>
-    </div>
-    <!-- banner -->
-    <div class="banner" style="background: url('https://www.columbus-clean.com/wp-content/uploads/2018/12/RA35K10-ab-01-reinigungsautomaten-scheuersaugmaschine.jpg');background-size:cover">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h1>Nach--</h1>
-                </div>
-                <div class="col-xs-12">
-                    <h1 class="title-heading-left">läufer</h1>
-                </div>
-                <div class="col-xs-12">
-                    <h2>RA 35|K 10</h2>
-                </div>
-            </div>
         </div>
     </div>
     <!-- content -->
     <div id="pro-overview" class="container pro-overview">
         <div class="row">
-            <div class="col-xs-12 pro-thumb">
+            <div class="col-xs-6 pro-thumb">
                 <!-- Swiper -->
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -271,10 +349,10 @@
                 </div>
                 <a href="http://" class="btn btn-medium btn-red">产品详情</a>
             </div>
-            <div class="col-xs-12">
-                <h1 class="color-black">RA 35|K 10
+            <div class="col-xs-6">
+                <h1 class="color-black" style="margin: 0">RA 35|K 10
                 </h1>
-                <h1 class="color-red">ÜBERSICHT</h1>
+                <h1 class="color-red" style="margin: 0">ÜBERSICHT</h1>
                 <div class="description">
                     <p>
                         Ultrakompakt und extrem wendig: der kostengünstige Reinigungsautomat für kleine und stark überstellte Flächen. Perfekt
@@ -282,8 +360,7 @@
                         Kabelversion für langes Arbeiten ohne Ladezeiten.
                     </p>
                 </div>
-                <div class="pro-option">
-                    <h3>TECHNISCHE ECKDATEN</h3>
+                <div class="pro-option" style="margin-top: 20px;">
                     <ul>
                         <li>
                             <p>
@@ -329,8 +406,7 @@
     <div id="highlights" class="highlights">
         <div class="row container">
             <div class="col-xs-12">
-                <h5 class="title-heading-center text-center color-black">RA 35|K 10</h5>
-                <h6 class="fusion-title text-center color-red">Produkthighlights</h6>
+                <h6 class="fusion-title  color-black">产品特征</h6>
             </div>
             <div class="clearfix"></div>
             <div class="col-md-4 col-xs-6 pro-column">
@@ -401,8 +477,7 @@
     <div id="technicaldata" class="technicaldata">
         <div class="row container">
             <div class="col-xs-12">
-                <h5 class="title-heading-center text-center color-black">RA 35|K 10</h5>
-                <h6 class="fusion-title text-center color-red">技术数据</h6>
+                <h6 class="fusion-title color-black">技术数据</h6>
             </div>
             <div class="clearfix"></div>
             <div class="col-md-6 col-xs-12">
@@ -446,123 +521,6 @@
                     <li>L x B x H <b>735 x 490 x 650 mm</b></li>
                     <li>L x B x H <b>735 x 490 x 650 mm</b></li>
                 </ul>
-            </div>
-        </div>
-    </div>
-    <!-- downloads -->
-    <div id="downloads" class="downloads">
-        <div class="row container">
-            <div class="col-xs-12">
-                <h5 class="title-heading-center text-center color-black">RA 35|K 10</h5>
-                <h6 class="fusion-title text-center color-red">资料下赞</h6>
-            </div>
-            <div class="clearfix"></div>
-            <div class="col-xs-12 col-md-6 col-md-offset-3">
-                <ul class="fusion-text">
-                    <li>
-                        <a title="Datenblatt"
-                            href="https://www.columbus-clean.com/wp-content/uploads/2018/12/RA35K10-dl-01-reinigungsautomat-scheuersaugmaschine-datenblatt.pdf"
-                            target="_blank" rel="noopener noreferrer">Datenblatt <b>Download PDF</b></a>
-                    </li>
-                    <li>
-                        <a title="Datenblatt"
-                            href="https://www.columbus-clean.com/wp-content/uploads/2018/12/RA35K10-dl-01-reinigungsautomat-scheuersaugmaschine-datenblatt.pdf"
-                            target="_blank" rel="noopener noreferrer">Datenblatt <b>Download PDF</b></a>
-                    </li>
-                    <li>
-                        <a title="Datenblatt"
-                            href="https://www.columbus-clean.com/wp-content/uploads/2018/12/RA35K10-dl-01-reinigungsautomat-scheuersaugmaschine-datenblatt.pdf"
-                            target="_blank" rel="noopener noreferrer">Datenblatt <b>Download PDF</b></a>
-                    </li>
-                    <li>
-                        <a title="Datenblatt"
-                            href="https://www.columbus-clean.com/wp-content/uploads/2018/12/RA35K10-dl-01-reinigungsautomat-scheuersaugmaschine-datenblatt.pdf"
-                            target="_blank" rel="noopener noreferrer">Datenblatt <b>Download PDF</b></a>
-                    </li>
-                    <li>
-                        <a title="Datenblatt"
-                            href="https://www.columbus-clean.com/wp-content/uploads/2018/12/RA35K10-dl-01-reinigungsautomat-scheuersaugmaschine-datenblatt.pdf"
-                            target="_blank" rel="noopener noreferrer">Datenblatt <b>Download PDF</b></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- attachments -->
-    <div id="attachments" class="attachments">
-        <div class="row container">
-            <div class="col-xs-12">
-                <h5 class="title-heading-center text-center color-black">RA 35|K 10</h5>
-                <h6 class="fusion-title text-center color-red">ZUBEHÖR</h6>
-            </div>
-            <div class="clearfix"></div>
-            <div class="col-xs-12 col-md-6 col-md-offset-3 text-center" style="margin-bottom: 20px;font-size:16px;">
-                <p>
-                    Als Spezialist für Gebäudereinigung bietet Ihnen columbus neben erstklassigen Maschinen auch ein breites Zubehörangebot,
-                    mit dem Sie Ihre Geräte individuell an Ihre Anforderungen anpassen können.
-                </p>
-            </div>
-            <div class="col-xs-12 text-center">
-                <a href="http://" class="btn btn-medium btn-red">查看更多主题</a>
-            </div>
-        </div>
-    </div>
-    <div id="sidelinks" class="sidelinks">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <div class="fusion-column-wrapper">
-                        <div class="fusion-imageframe hover-type-zoomin">
-                            <div class="hover-type-zoomin"><img src="https://www.columbus-clean.com/wp-content/uploads/2019/01/home-tb-02-maschinen-made-in-germany.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="fusion-text">
-                        Unternehmen
-                    </div>
-                    <h5 class="title-heading-left">
-                        Made in Germany
-                    </h5>
-                    <div class="fusion-button-wrapper fusion-alignleft">
-                        Für echte Maschinen
-                        <i class="fa-arrow-right fas button-icon-right"></i>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="fusion-column-wrapper">
-                        <div class="fusion-imageframe hover-type-zoomin">
-                            <div class="hover-type-zoomin"><img src="https://www.columbus-clean.com/wp-content/uploads/2019/01/home-tb-02-maschinen-made-in-germany.jpg"
-                                alt=""></div>
-                        </div>
-                    </div>
-                    <div class="fusion-text">
-                        Unternehmen
-                    </div>
-                    <h5 class="title-heading-left">
-                        Made in Germany
-                    </h5>
-                    <div class="fusion-button-wrapper fusion-alignleft">
-                        Für echte Maschinen
-                        <i class="fa-arrow-right fas button-icon-right"></i>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="fusion-column-wrapper">
-                        <div class="fusion-imageframe hover-type-zoomin">
-                            <div class="hover-type-zoomin"><img src="https://www.columbus-clean.com/wp-content/uploads/2019/01/home-tb-02-maschinen-made-in-germany.jpg"
-                                alt=""></div>
-                        </div>
-                    </div>
-                    <div class="fusion-text">
-                        Unternehmen
-                    </div>
-                    <h5 class="title-heading-left">
-                        Made in Germany
-                    </h5>
-                    <div class="fusion-button-wrapper fusion-alignleft">
-                        Für echte Maschinen
-                        <i class="fa-arrow-right fas button-icon-right"></i>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -572,50 +530,47 @@
                 <div class="col-xs-9">
                     <div class="row">
                         <div class="col-xs-6 col-md-3">
-                            <h3>PRODUCTS</h3>
+                            <h3>产品</h3>
                             <ul>
-                                <li><a href="#">SCRUBBER DRYERS</a></li>
-                                <li><a href="#">SCRUBBER DRYERS</a></li>
-                                <li><a href="#">SCRUBBER DRYERS</a></li>
-                                <li><a href="#">SCRUBBER DRYERS</a></li>
+                                <li><a href="#">洗地洗干机</a></li>
+                                <li><a href="#">单擦机</a></li>
+                                <li><a href="#">扶梯清洗剂</a></li>
                             </ul>
                         </div>
                         <div class="col-xs-6 col-md-3">
-                            <h3>PRODUCTS</h3>
+                            <h3>行业应用</h3>
                             <ul>
-                                <li><a href="#">SCRUBBER DRYERS</a></li>
-                                <li><a href="#">SCRUBBER DRYERS</a></li>
-                                <li><a href="#">SCRUBBER DRYERS</a></li>
-                                <li><a href="#">SCRUBBER DRYERS</a></li>
+                                <li><a href="#">物业保洁</a></li>
+                                <li><a href="#">零售</a></li>
+                                <li><a href="#">工业</a></li>
+                                <li><a href="#">物流运输</a></li>
+                                <li><a href="#">医疗健康</a></li>
                             </ul>
                         </div>
                         <div class="col-xs-6 col-md-3">
-                            <h3>PRODUCTS</h3>
+                            <h3>服务</h3>
                             <ul>
-                                <li><a href="#">SCRUBBER DRYERS</a></li>
-                                <li><a href="#">SCRUBBER DRYERS</a></li>
-                                <li><a href="#">SCRUBBER DRYERS</a></li>
-                                <li><a href="#">SCRUBBER DRYERS</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-6 col-md-3">
-                            <h3>PRODUCTS</h3>
-                            <ul>
-                                <li><a href="#">SCRUBBER DRYERS</a></li>
-                                <li><a href="#">SCRUBBER DRYERS</a></li>
-                                <li><a href="#">SCRUBBER DRYERS</a></li>
-                                <li><a href="#">SCRUBBER DRYERS</a></li>
+                                <li><a href="#">关于我们</a></li>
+                                <li><a href="#">联系我们</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-md-3">
                     <div class="textwidget">
-                        <p>G. Staehle GmbH u. Co. KG<br>
-                            Mercedesstraße 15<br>
-                            70372 Stuttgart</p>
-                        <p>Phone: +49 711 95 44 – 950<br>
-                            <a title="Write an email" href="mailto:info@columbus-clean.com">info@columbus-clean.com</a></p>
+                        <p>上海静安区共和新路666号<br>
+                            中土大厦2018-2019<br>
+                            <p>Phone:<br>
+                                +86 21 6306 6088<br>
+                            </p>
+                            <p>Phone:<br>
+                                +86 21 6306 6088<br>
+                                <p>Email:<br>
+                                    <a title="Write an email" href="mailto:info@columbus-clean.com">info@kemi-info.cn</a>
+                                </p>
+                                <p>
+                                    沪ICP备31038594号
+                                </p>
                     </div>
                 </div>
             </div>

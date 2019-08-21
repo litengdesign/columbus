@@ -374,14 +374,14 @@ ul{
 }
 .post-title a{
     color: #000;
-    padding-right: 70px;
+    padding-right: 77px;
     background-image: url('../img/red-arrow.png');
     background-position: 100% 2px;
     background-size: 27px;
     background-repeat: no-repeat;
 }
 .fusion-portfolio-content{
-    margin: 0;
+    margin-bottom: 30px;
     padding: 20px 0;
     color: #000000;
     background-color: #F9FAFB;
@@ -486,7 +486,7 @@ ul{
 }
 /* lists */
 .lists{
-    padding: 85px 40px 60px;
+    padding: 10px 40px 60px;
 }
 .lists h3.cate-title{
     font-size: 30px;
@@ -509,7 +509,7 @@ ul{
 }
 /* product content*/
 .pro-overview{
-    padding: 80px 40px;
+    padding: 40px;
 }
 .pro-overview .description{
    color: #3e3e3e;
@@ -541,7 +541,7 @@ ul{
     margin-top: 20px;
 }
 .fusion-title{
-    font-size: 40px;
+    font-size: 24px;
     margin-bottom: 25px;
 }
 /* highlights */
