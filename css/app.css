@@ -36,6 +36,12 @@ ul{
 .color-black{
     color: #000
 }
+.bg-gray{
+    background-color: #f1f2f4;
+}
+.bg-white{
+    background-color: #fff;
+}
 .btn{
     padding: 12px 14px 10px 14px;
     color: #FFFFFF;
@@ -548,6 +554,9 @@ ul{
 .highlights{
     padding: 80px 40px; 
     background-color: #f1f2f4;
+}
+.highlights.bg-white{
+    background-color: #fff;
 }
 .highlights .pro-column{
     margin-bottom: 20px;
