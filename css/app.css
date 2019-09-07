@@ -223,8 +223,12 @@ ul{
    background: none;
 }
 .search-wrap input{
+    width: 86%;
     line-height: 25px;
     border-bottom: 1px solid #ddd;
+}
+.search-wrap button{
+    padding: 0;
 }
 .search-wrap .icon-search{
     display: inline-block;
@@ -350,7 +354,9 @@ ul{
     -webkit-align-items: center;
     align-items: center;
 }
-
+#product-carousel .swiper-slide{
+    width: auto !important;
+}
 .fusion-carousel .fusion-carousel-item img {
     vertical-align: middle;
     width: 100%;
