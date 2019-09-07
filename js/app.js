@@ -7,7 +7,8 @@ var swiper = new Swiper('.swiper-banner', {
 });
 //产品列表幻灯片
 var swiper = new Swiper('.swiper-product', {
-    slidesPerView: 3,
+    slidesPerView: 3, 
+    slidesPerView: 'auto',
     spaceBetween: 30,
     navigation: {
         nextEl: '.swiper-button-next',

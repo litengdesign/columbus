@@ -350,6 +350,9 @@ ul{
     -webkit-align-items: center;
     align-items: center;
 }
+#product-carousel .swiper-slide{
+    width: auto !important;
+}
 .fusion-carousel .fusion-carousel-item img {
     vertical-align: middle;
     width: 100%;
