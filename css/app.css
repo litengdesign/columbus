@@ -350,9 +350,7 @@ ul{
     -webkit-align-items: center;
     align-items: center;
 }
-#product-carousel .swiper-slide{
-    width: auto !important;
-}
+
 .fusion-carousel .fusion-carousel-item img {
     vertical-align: middle;
     width: 100%;
@@ -828,5 +826,8 @@ footer p{
     }
     #consulting-01 .hover-type-zoomin img{
         height: auto;
+    }
+    #product-carousel .swiper-slide{
+        width: 100% !important;
     }
 }
