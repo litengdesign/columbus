@@ -57,8 +57,11 @@
             </div>
             <div class="menu-wrapper hidden-xs row">
                 <ul class="menu col-md-8">
-                    <li @mouseover="openDropMenu(1)" @mouseout="closeDropMenu(1)" :class="mindex==1?'active':''">
-                        <a href="products.html" class="menu-text"><span>首页</span></a>
+                    <li :class="mindex==1?'active':''">
+                        <a href="index.html" class="menu-text"><span>首页</span></a>
+                    </li>
+                    <li @mouseover="openDropMenu(2)" @mouseout="closeDropMenu(2)" :class="mindex==2?'active':''">
+                        <a href="" class="menu-text"><span>产品</span></a>
                         <div class="dropMenu products">
                             <div class="row">
                                 <div class="col-md-3 menu-list col-xs-12">
@@ -84,8 +87,7 @@
                                     </ul>
                                     <ul class="sub-menu">
                                         <li><a href="http://">
-                                                <i
-                                                    class="icon icon-einscheibenmaschinen"></i><b>einscheibenmaschinen</b></a>
+                                                <i class="icon icon-einscheibenmaschinen"></i><b>einscheibenmaschinen</b></a>
                                         </li>
                                         <li><a href="http://">Low Speed</a></li>
                                         <li><a href="http://">High Speed</a></li>
@@ -142,42 +144,6 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li @mouseover="openDropMenu(2)" @mouseout="closeDropMenu(2)" :class="mindex==2?'active':''">
-                        <a href="" class="menu-text"><span>产品</span></a>
-                        <div class="dropMenu fadeIn animated">
-                            <div class="row">
-                                <div class="col-md-3 menu-list col-xs-12">
-                                    <ul class="sub-menu">
-                                        <li><a href="http://">Contract cleaners</a></li>
-                                        <li><a href="http://">Retail</a></li>
-                                        <li><a href="http://">Industry</a></li>
-                                        <li><a href="http://">Transport / logistics</a></li>
-                                        <li><a href="http://">Healthcare</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-3 menu-list pull-right">
-                                    <div class="hot-post">
-                                        <div class="fusion-megamenu-title">
-                                            Die neue 40L-Klasse
-                                        </div>
-                                        <div class="media_image-3 hover-type-zoomin">
-                                            <a href="http://">
-                                                <div class="hover-type-zoomin"><img
-                                                        src="https://www.columbus-clean.com/wp-content/uploads/2019/02/menu-tb-02-40-liter-klasse-300x200.jpg"
-                                                        alt=""></div>
-                                            </a>
-                                        </div>
-                                        <div class="widget_text">
-                                            <p>Unsere neue 40-Liter-Maschine: der Allrounder für jede Branche und jeden
-                                                Einsatz.</p>
-                                            <p><a href="https://www.columbus-clean.com/avada-portfolio/ra-55bm-40/">Mehr
-                                                    Informationen</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </transition>
                     </li>
                     <li @mouseover="openDropMenu(3)" @mouseout="closeDropMenu(3)" :class="mindex==3?'active':''"><a
                             href="article.html" class="menu-text"><span>行业应用</span></a>
