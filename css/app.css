@@ -238,7 +238,7 @@ ul{
 }
 /* banner */
 .banner{
-    padding-top: 125px;
+    padding-top: 80px;
     padding-right: 40px;
     padding-bottom: 80px;
     padding-left: 40px;
@@ -246,7 +246,7 @@ ul{
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 550px;
+    height: 550px;
     width: 100%;
 }
 .banner-category{
