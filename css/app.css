@@ -698,7 +698,7 @@ footer{
     border-top-width: 0px;
     padding-top: 43px;
     padding-bottom: 40px;
-    color: #999;
+    color: #fff;
 }
 footer ul{
     padding-top: 15px;
@@ -707,7 +707,7 @@ footer li{
     padding: 0 0 10px;
 }
 footer a{
-    color: #999;
+    color: #fff;
     font-size: 12px;
 }
 footer h3{
@@ -754,12 +754,15 @@ footer p{
         background-position: 77% 50%;
     }
     .banner h1{
-        font-size: 45px !important;
+        font-size: 30px !important;
         margin: 0;
-        margin-top: 30px;
+        /* margin-top: 30px; */
+        text-align: left;
     }
     .banner h1.title-heading-left, .banner h2{
-        padding-left: 0px;
+            padding-left: 0px;
+            text-align: left;
+            font-size: 18px;
     }
     #intro .icon,#intro .content-box-heading{
         margin-bottom: 15px;
