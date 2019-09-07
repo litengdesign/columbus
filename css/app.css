@@ -220,10 +220,11 @@ ul{
 .search-wrap button{
    border:0;
    outline: none;
+   background: none;
 }
 .search-wrap input{
     line-height: 25px;
-    /* border-bottom: 1px solid #ddd; */
+    border-bottom: 1px solid #ddd;
 }
 .search-wrap .icon-search{
     display: inline-block;
